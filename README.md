@@ -117,3 +117,21 @@ This track is for the nitty-gritty specifics. It covers tools, templates, job de
 ### How to use the tracks
 - **Readers:** Start with the Main content to understand the big picture. Dive into Concept diving or Technical details as needed for more depth or practical guidance.
 - **Contributors:** Ensure your content fits the purpose of the track you're contributing to. Keep the Main content concise, use Concept diving for rich explanations, and reserve detailed specifics for the Technical details track.
+
+# Use of AI tools for writing
+
+Not everyone is a natural-born wordsmith, but that shouldn’t stop you from sharing great ideas. Large Language Models (LLMs) are fantastic for polishing your writing—when used thoughtfully. Here’s how to get the most out of AI tools in this project, with some friendly do’s and don’ts.
+
+## Principles
+- The thinking is up to you—AI is here to help, not to replace your brain.
+- No “text dumping.” If it reads like a wall of AI-generated text, it’s out.
+- Always review and fact-check AI output. If it can be verified, verify it.
+
+## Do
+- Point your AI tool to the Guide of style for a consistent voice. If you find yourself constantly fixing the style, consider suggesting improvements to the Guide.
+- Start by writing what you want to say, in your own words. Don’t worry about grammar, structure, or even language—just get your ideas down. (If English isn’t your first language, draft in your native tongue and translate later.)
+- Once you’re happy with your draft, ask your AI tool to review it. Use its feedback to spot strengths and weaknesses, then apply your own judgment to improve the text. Finally, let the AI help you polish the writing to match the Guide of style.
+
+## Don’t
+- Don’t ask the AI to write a section from scratch without giving it your own draft first.
+- Don’t use AI to write or rewrite large parts of the book in one go. That creates monster pull requests and dumps the responsibility for thinking and editing onto reviewers.

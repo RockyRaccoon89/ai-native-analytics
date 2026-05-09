@@ -82,4 +82,38 @@ Tagging rules:
 
 # Guide of style
 
+Our style is clear, direct, and reader-friendly. Here’s how to keep your writing on target:
+
+- Be straightforward. Say what you mean, skip the fluff, and get to the point.
+- Use jargon only when it truly helps the reader (for example, when a technical term is widely known and makes things clearer or more precise). If you must use a less common term, give a quick definition.
+- Don’t be afraid to have a little fun! A clever turn of phrase or a light joke is welcome, as long as it doesn’t distract or undermine professionalism.
+- Stay professional. Avoid sarcasm, inside jokes, or anything that could be misunderstood.
+- Prefer short sentences and active voice. Make your writing easy to scan and understand.
+- Use examples and analogies when they help clarify complex ideas.
+- Don’t take yourself (or the project) too seriously—just take the reader’s time seriously.
+- Consistency matters: follow the structure and terminology already used in the book unless you have a good reason to change it.
+
+In short: Write for humans. Make it accurate, approachable, and enjoyable to read.
+
 # Book structure
+
+The book is structured into three complementary tracks to balance readability, depth, and technical precision. Each track serves a distinct purpose:
+
+## Main content
+This is the core narrative of the book. It introduces the key concepts and explains their relationships in a way that can be read independently. The focus is on clarity and flow, making it accessible to a broad audience.
+
+**Example content:** An overview of AI-native analytics systems, their components, and how they interact.
+
+## Concept diving
+Some concepts are rich enough to warrant deeper exploration, but including too much detail in the main track would disrupt readability. These deeper dives expand on the high-level explanations in the main content, providing additional context and nuance.
+
+**Example content:** A detailed exploration of dependency management in AI systems, building on its introduction in the main content.
+
+## Technical details
+This track is for the nitty-gritty specifics. It covers tools, templates, job descriptions, architecture patterns, and other highly detailed topics. The tone is factual and professional, similar to a Wikipedia article, with clear distinctions between facts and opinions.
+
+**Example content:** A comparison of popular tools for AI data pipelines, or a working template for designing an AI-native dashboard.
+
+### How to use the tracks
+- **Readers:** Start with the Main content to understand the big picture. Dive into Concept diving or Technical details as needed for more depth or practical guidance.
+- **Contributors:** Ensure your content fits the purpose of the track you're contributing to. Keep the Main content concise, use Concept diving for rich explanations, and reserve detailed specifics for the Technical details track.

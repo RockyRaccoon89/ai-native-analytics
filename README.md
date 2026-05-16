@@ -2,13 +2,11 @@
 An open-source guide to designing analytics systems for AI-assisted development
 
 ## License
-
 Content in this repository is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).
 
 Code examples and scripts are licensed under the MIT License.
 
 # How to contribute
-
 This project is a book. Changes should improve both technical accuracy and reading flow across chapters.
 
 ### 1) Before opening an issue
@@ -20,37 +18,10 @@ This project is a book. Changes should improve both technical accuracy and readi
 At minimum, include:
 - Problem: what is unclear, missing, or incorrect.
 - Proposed change: what should be added or edited.
-- Scope: which chapters/files are affected.
-- Why now: impact on readers or maintainability.
 - Acceptance criteria: what "done" looks like.
+- Proper tags are used
 
-### 3) Triage and backlog
-- The editor reviews new issues and may:
-	- accept to backlog,
-	- request clarification,
-	- or close with rationale.
-- Structural proposals may require Discussion consensus before backlog.
-
-### 4) Implementation workflow
-- Work only on issues in backlog.
-- Create a branch linked to that issue.
-- Keep changes focused to one issue whenever possible.
-- Update related sections when a change affects narrative continuity.
-
-### 5) Pull request requirements
-Your PR should include:
-- Link to the issue.
-- Summary of what changed and why.
-- List of affected chapters/files.
-- Notes on trade-offs or alternatives considered.
-- Screenshots/output only if relevant to examples.
-
-### 6) Review expectations
-- Reviews prioritize coherence, technical correctness, and chapter flow.
-- The editor sets final direction and may request restructuring for consistency.
-- Approved PRs are merged when acceptance criteria are met.
-
-### 7) Issue tags
+**Issue tags**
 To keep triage and planning consistent, use the following tags on issues.
 
 Required tags:
@@ -80,8 +51,30 @@ Tagging rules:
 - PRs should inherit `type/*`, `priority/*`, and `scope/*` from their linked issue.
 - Issues missing required tags may be sent back for clarification before backlog.
 
-# Guide of style
+### 3) Triage and backlog
+- The editor reviews new issues and may:
+	- accept to backlog,
+	- request clarification,
+	- or close with rationale.
+- Structural proposals may require Discussion consensus before backlog.
 
+### 4) Implementation workflow
+- Work only on issues in backlog.
+- Create a branch linked to that issue.
+- Keep changes focused to one issue whenever possible.
+- Update related sections when a change affects narrative continuity.
+
+### 5) Pull request requirements
+Your PR should include:
+- Link to the issue.
+- Delta between what was documented in the issue and the actual change
+
+### 6) Review expectations
+- Reviews prioritize coherence, technical correctness, and chapter flow.
+- The editor sets final direction and may request restructuring for consistency.
+- Approved PRs are merged when acceptance criteria are met.
+
+# Guide of style
 Our style is clear, direct, and reader-friendly. Here’s how to keep your writing on target:
 
 - Be straightforward. Say what you mean, skip the fluff, and get to the point.
@@ -96,30 +89,28 @@ Our style is clear, direct, and reader-friendly. Here’s how to keep your writi
 In short: Write for humans. Make it accurate, approachable, and enjoyable to read.
 
 # Book structure
-
-The book is structured into three complementary tracks to balance readability, depth, and technical precision. Each track serves a distinct purpose:
+The book is structured into **three complementary tracks** to balance readability, depth, and technical precision. Each track serves a distinct purpose:
 
 ## Main content
 This is the core narrative of the book. It introduces the key concepts and explains their relationships in a way that can be read independently. The focus is on clarity and flow, making it accessible to a broad audience.
 
-**Example content:** An overview of AI-native analytics systems, their components, and how they interact.
+**Example content:** An overview of data & analytics (D&A) systems, their main components (data sources, pipelines, storage, analytics, visualization), and how these parts interact in a typical workflow.
 
 ## Concept diving
 Some concepts are rich enough to warrant deeper exploration, but including too much detail in the main track would disrupt readability. These deeper dives expand on the high-level explanations in the main content, providing additional context and nuance.
 
-**Example content:** A detailed exploration of dependency management in AI systems, building on its introduction in the main content.
+**Example content:** A detailed exploration of data governance, lineage, or the nuances of building robust data pipelines, building on their introduction in the main content.
 
 ## Technical details
 This track is for the nitty-gritty specifics. It covers tools, templates, job descriptions, architecture patterns, and other highly detailed topics. The tone is factual and professional, similar to a Wikipedia article, with clear distinctions between facts and opinions.
 
-**Example content:** A comparison of popular tools for AI data pipelines, or a working template for designing an AI-native dashboard.
+**Example content:** A comparison of popular ETL tools, a working template for a data quality checklist, or a reference architecture for a modern analytics platform.
 
 ### How to use the tracks
 - **Readers:** Start with the Main content to understand the big picture. Dive into Concept diving or Technical details as needed for more depth or practical guidance.
 - **Contributors:** Ensure your content fits the purpose of the track you're contributing to. Keep the Main content concise, use Concept diving for rich explanations, and reserve detailed specifics for the Technical details track.
 
 # Use of AI tools for writing
-
 Not everyone is a natural-born wordsmith, but that shouldn’t stop you from sharing great ideas. Large Language Models (LLMs) are fantastic for polishing your writing—when used thoughtfully. Here’s how to get the most out of AI tools in this project, with some friendly do’s and don’ts.
 
 ## Principles

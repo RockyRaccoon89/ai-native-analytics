@@ -1,12 +1,58 @@
 # Ideas to structure into the book
 - Context file
+    - repo centric
+        - repo architecture
+    - team centric
+        - coding standards
+        - documentation standards
+        - coding process
+        - paterns
 - workplan
     - workplan should be link the request
+    - build from standards and document exception and their justification from standards
+    - ephemerous - once the work is completed, should be archived
 - use case
 - skills
     - like a function
-    - should be small enough to be tester and reuse.
-        - most skill are really big
-        
+    - **must** be embeed in process
+        - assure value
+        - increase learning
+        - also mean that need to standardize process
+    - skill structure
+        - should be small enough to be tester and reuse.
+            - most skill are really big
+            - need to be small enough to be tester
+        - ? modules?
+    - A skill is the equivalent of an how-to
+        - Like a good how-to, it can be use to standardize, optimize and continuous improvement
+    - need to implement RACI & continuous improvement processes
+    - skill can not only produce a standardized output but also safeguard againts previous pitfalls
+    - type of skill
+        - support
+            - profiling: AI to show data & exception and the dev manually provide the correct output
+                - ? how to be cost effective
+                - ? directly link with use case
+            - control on standards
+            - control on governance (ex: proper approbation)
+        - build
+            - build & maintain workplan
+            - help generate data test
+                - would support "data test coding"
+            - transformation: provide data test & standards and get transformation
+            - documentation
+                - from use case
+                - from workplan
+    - should not be managed inside the code base
+        - Governance missmatch: code is manage for what it does with it's own RACI while the skills should be manage in it's own governance process. Ex: change in a skill used internally to the team shouldn't need CAB approval
+        - some skills could be reused from different repo
+        - missmatch between what is in the repo and what the code does. this will happen if the skills are updated but the code doesn't change
+- human process & skill processes interconnection
+- to leverage the AI the processes must be more mature
+    - need better request documentation to feed the AI
+    - need better code base and use case documentation to avoid regression on already existing objects
+    - need structure
+        - Reference information (context files & standards)
+        - Reference process (skill)
+
 
 # Chapters

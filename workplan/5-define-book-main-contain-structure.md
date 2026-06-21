@@ -7,13 +7,26 @@
         - documentation standards
         - coding process
         - paterns
-- workplan
-    - workplan should be link the request
-    - build from standards and document exception and their justification from standards
-    - ephemerous - once the work is completed, should be archived
-- use case
+- Product Specification
+    - use case: context and value. who, goal & business outcome
+        - should never use system language
+        - stay in business language, focused on user goal and value
+        - If a technical term is unavoidable and widely understood, you can include it, but only to clarify context, not to prescribe design.
+    - implementation plan: exact system change
+        - implementation plan should be link the request
+        - build from standards and document exception and their justification from standards
+        - ? ephemerous - once the work is completed, should be archived
+    - Requirements: what capability must exist
+        It defines what the solution must do, what rules it must respect, and how success is measured.
+    - data contract
+- skill areas
+    - groupment of skills
+    - naming structure: area.skill ex:
+        - documentation.erd
+        - documentation.readme
 - skills
     - like a function
+    - "teach" the skill. Do the work then ask the AI to create the skill to reproduce the work that was done. 
     - **must** be embeed in process
         - assure value
         - increase learning
@@ -35,24 +48,25 @@
             - control on standards
             - control on governance (ex: proper approbation)
         - build
-            - build & maintain workplan
+            - build & maintain implementation plan
             - help generate data test
                 - would support "data test coding"
             - transformation: provide data test & standards and get transformation
             - documentation
                 - from use case
-                - from workplan
+                - from implementation
     - should not be managed inside the code base
         - Governance missmatch: code is manage for what it does with it's own RACI while the skills should be manage in it's own governance process. Ex: change in a skill used internally to the team shouldn't need CAB approval
         - some skills could be reused from different repo
         - missmatch between what is in the repo and what the code does. this will happen if the skills are updated but the code doesn't change
-- human process & skill processes interconnection
-- to leverage the AI the processes must be more mature
-    - need better request documentation to feed the AI
-    - need better code base and use case documentation to avoid regression on already existing objects
-    - need structure
-        - Reference information (context files & standards)
-        - Reference process (skill)
+- D&A processes with AI
+    - human process & skill processes interconnection
+    - to leverage the AI the processes must be more mature
+        - need better request documentation to feed the AI
+        - need better code base and use case documentation to avoid regression on already existing objects
+        - need structure
+            - Reference information (context files & standards)
+            - Reference process (skill)
 
 
 # Chapters

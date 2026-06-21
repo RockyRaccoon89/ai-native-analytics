@@ -8,7 +8,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
         super();
     }
     connectedCallback() {
-        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded "><span class="chapter-link-wrapper"><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></span></li></ol>';
+        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded "><span class="chapter-link-wrapper"><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></span></li><li class="chapter-item expanded "><span class="chapter-link-wrapper"><a href="chapter_1_ai_needs_structure.html"><strong aria-hidden="true">2.</strong> AI Needs Structure More Than You Think</a></span></li><li class="chapter-item expanded "><span class="chapter-link-wrapper"><a href="chapter_2_context_files.html"><strong aria-hidden="true">3.</strong> Giving the AI Something to Work With — Context Files</a></span></li><li class="chapter-item expanded "><span class="chapter-link-wrapper"><a href="chapter_3_use_cases_and_workplans.html"><strong aria-hidden="true">4.</strong> From Request to Action — Use Cases and Workplans</a></span></li><li class="chapter-item expanded "><span class="chapter-link-wrapper"><a href="chapter_4_skills.html"><strong aria-hidden="true">5.</strong> What Is a Skill (and Why It Matters)</a></span></li><li class="chapter-item expanded "><span class="chapter-link-wrapper"><a href="chapter_5_making_it_all_work.html"><strong aria-hidden="true">6.</strong> Making It All Work Together</a></span></li></ol>';
         // Set the current, active page, and reveal it if it's hidden
         let current_page = document.location.href.toString().split('#')[0].split('?')[0];
         if (current_page.endsWith('/')) {

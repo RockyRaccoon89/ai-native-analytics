@@ -36,10 +36,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-fe7efb02.js";
+            window.path_to_searchindex_js = "searchindex-0056b16c.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-c022006f.js"></script>
+        <script src="toc-13393035.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -175,7 +175,71 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<!-- Reference outline for future writing -->
+<!-- - Why this book exists -->
+<!-- - Why should you read it -->
+<!-- - How to read this book -->
+<!-- - Why should you contribute --><div style="break-before: page; page-break-before: always;"></div>
+<h1 id="ai-needs-structure-more-than-you-think"><a class="header" href="#ai-needs-structure-more-than-you-think">AI Needs Structure More Than You Think</a></h1>
+<p>The promise is simple: AI helps you build faster. The catch? It can only be as good as the structure around it. This chapter sets the stage, not just about tools, but about how human processes and AI processes interconnect. They don’t run side by side; they feed each other. Leveraging AI in analytics demands more mature processes: better request documentation, better codebase and use case documentation to avoid regressions, and a clear separation between reference information (context files, standards) and reference processes (skills). Every chapter that follows builds on this interconnection.</p>
+<!-- Ideas covered -->
+<!-- - The interconnection between human processes and AI skill processes -->
+<!-- - Why leveraging AI demands more mature processes -->
+<!-- - The need for better request documentation to feed the AI -->
+<!-- - The need for better codebase and use case documentation to prevent regressions -->
+<!-- - The two pillars of structure: reference information (context files, standards) and reference processes (skills) -->
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="giving-the-ai-something-to-work-with--context-files"><a class="header" href="#giving-the-ai-something-to-work-with--context-files">Giving the AI Something to Work With — Context Files</a></h1>
+<p>AI doesn’t know your team. It doesn’t know your repo architecture, your coding standards, or how you like your documentation. Context files fix that. This chapter introduces two flavors: repo-centric context (your repository architecture) and team-centric context (coding standards, documentation standards, coding process, and patterns). Together, they form the reference information the AI draws from to produce work that actually fits.</p>
+<!-- Ideas covered -->
+<!-- - Context files as the foundation of AI-assisted work -->
+<!-- - Repo-centric context: repository architecture -->
+<!-- - Team-centric context: coding standards, documentation standards, coding process, and patterns -->
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="from-request-to-action--use-cases-and-workplans"><a class="header" href="#from-request-to-action--use-cases-and-workplans">From Request to Action — Use Cases and Workplans</a></h1>
+<p>Work starts with a use case. A workplan turns it into a concrete system change. This chapter walks through that lifecycle: how the workplan links back to the request, how it builds from established standards (and documents any justified exceptions), and why the workplan is ephemerous — once the work is done, it gets archived, not preserved as permanent documentation.</p>
+<!-- Ideas covered -->
+<!-- - The use case: who it serves, the goal, and the business outcome -->
+<!-- - Writing in business language, never in system language (technical terms only to clarify context, not to prescribe design) -->
+<!-- - The implementation plan as the exact system change, linked to the request -->
+<!-- - Building from standards and documenting justified exceptions -->
+<!-- - The ephemerous nature of the implementation plan (archived once work is completed) -->
+<!-- - Requirements: what the solution must do, what rules it respects, how success is measured -->
+<!-- - Data contracts and their enforcement -->
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="what-is-a-skill-and-why-it-matters"><a class="header" href="#what-is-a-skill-and-why-it-matters">What Is a Skill (and Why It Matters)</a></h1>
+<p>A skill is like a function. It’s the equivalent of a how-to guide — one that can be used to standardize, optimize, and continuously improve. This chapter introduces what skills are and the two types that matter:</p>
+<ul>
+<li><strong>Support skills</strong>: Profiling (the AI surfaces data and exceptions, the developer provides the correct output), control on standards, and control on governance (e.g., proper approbation).</li>
+<li><strong>Build skills</strong>: Building and maintaining workplans, generating data tests (supporting “data test coding”), transformation (provide data test and standards, get transformation), and documentation (from use case, from workplan).</li>
+</ul>
+<p>A skill doesn’t just produce consistent output — it also safeguards against previous pitfalls.</p>
+<!-- Ideas covered -->
+<!-- - A skill works like a function and reads like a how-to guide -->
+<!-- - Skills standardize output and safeguard against previous pitfalls -->
+<!-- - Teaching the skill: do the work first, then ask the AI to reproduce it as a skill -->
+<!-- - Skills must be embedded in process (assures value, increases learning, standardizes work) -->
+<!-- - Support skills: profiling, control on standards, control on governance -->
+<!-- - Build skills: implementation plans, data test generation, transformation, documentation -->
+<!-- - Open questions: cost effectiveness, direct link with use case -->
+<!-- - Skill areas as groupings with a naming convention (area.skill) -->
+<!-- - Why skills should not live inside the codebase (governance mismatch, cross-repo reuse, repo-vs-code drift) -->
+<!-- - Skill structure: small enough to test and reuse (modules as a potential solution) -->
+<!-- - RACI, continuous improvement, feedback loops, and skill versioning -->
+<!-- Concept diving -->
+<!-- - "Teaching" the skill: You do the work first, then ask the AI to create the skill to reproduce what you did. -->
+<!-- - Skills must be embedded in process. That's how they assure value, increase learning, and push toward standardized processes. -->
+<!-- - Skills should not be managed inside the codebase. Code is managed for what it does, with its own RACI. Skills need their own governance process. -->
+<!-- Technical details -->
+<!-- - Skill structure: small enough to be tested and reused. Most skills today are too big. Modules might help. -->
+<!-- - RACI and continuous improvement processes for managing skills over time. -->
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="making-it-all-work-together"><a class="header" href="#making-it-all-work-together">Making It All Work Together</a></h1>
+<p>Chapter 1 introduced the interconnection between human and AI processes. Each chapter since has shown a piece of it — context files feeding the AI’s understanding, workplans bridging requests to action, skills embedding AI into daily work. This closing chapter brings those pieces together: how context files as reference information and skills as reference processes form a coherent system, and what it looks like when the loop is working end to end.</p>
+<!-- Ideas covered -->
+<!-- - Full synthesis of the human process and skill process interconnection -->
+<!-- - The complete structure in action: reference information (context files, standards) combined with reference processes (skills) -->
 
                     </main>
 

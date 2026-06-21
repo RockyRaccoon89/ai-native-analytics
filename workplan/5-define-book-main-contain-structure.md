@@ -1,4 +1,5 @@
-# Ideas to structure into the book
+# Context
+## Ideas to structure into the book
 - Context file
     - repo centric
         - repo architecture
@@ -75,15 +76,15 @@
     - Training - upskilling
 
 
-# Chapters
+## Chapters
 
-## Introduction
+### Introduction
 - Why this book exist
 - Why should you read it
 - How to read this book
 - Why should you contribute
 
-## Chapter 1: AI Needs Structure More Than You Think
+### Chapter 1: AI Needs Structure More Than You Think
 The promise is simple: AI helps you build faster. The catch? It can only be as good as the structure around it. This chapter sets the stage, not just about tools, but about how human processes and AI processes interconnect. They don't run side by side; they feed each other. Leveraging AI in analytics demands more mature processes: better request documentation, better codebase and use case documentation to avoid regressions, and a clear separation between reference information (context files, standards) and reference processes (skills). Every chapter that follows builds on this interconnection.
 
 Ideas covered:
@@ -93,7 +94,7 @@ Ideas covered:
 - The need for better codebase and use case documentation to prevent regressions
 - The two pillars of structure: reference information (context files, standards) and reference processes (skills)
 
-## Chapter 2: Giving the AI Something to Work With — Context Files
+### Chapter 2: Giving the AI Something to Work With — Context Files
 AI doesn't know your team. It doesn't know your repo architecture, your coding standards, or how you like your documentation. Context files fix that. This chapter introduces two flavors: repo-centric context (your repository architecture) and team-centric context (coding standards, documentation standards, coding process, and patterns). Together, they form the reference information the AI draws from to produce work that actually fits.
 
 Ideas covered:
@@ -101,7 +102,7 @@ Ideas covered:
 - Repo-centric context: repository architecture
 - Team-centric context: coding standards, documentation standards, coding process, and patterns
 
-## Chapter 3: From Request to Action — Use Cases and Workplans
+### Chapter 3: From Request to Action — Use Cases and Workplans
 Work starts with a use case. A workplan turns it into a concrete system change. This chapter walks through that lifecycle: how the workplan links back to the request, how it builds from established standards (and documents any justified exceptions), and why the workplan is ephemerous — once the work is done, it gets archived, not preserved as permanent documentation.
 
 Ideas covered:
@@ -113,7 +114,7 @@ Ideas covered:
 - Requirements: what the solution must do, what rules it respects, how success is measured
 - Data contracts and their enforcement
 
-## Chapter 4: What Is a Skill (and Why It Matters)
+### Chapter 4: What Is a Skill (and Why It Matters)
 A skill is like a function. It's the equivalent of a how-to guide — one that can be used to standardize, optimize, and continuously improve. This chapter introduces what skills are and the two types that matter:
 
 - **Support skills**: Profiling (the AI surfaces data and exceptions, the developer provides the correct output), control on standards, and control on governance (e.g., proper approbation).
@@ -143,9 +144,52 @@ Ideas covered:
 - Skill structure: small enough to be tested and reused. Most skills today are too big. Modules might help.
 - RACI and continuous improvement processes for managing skills over time.
 
-## Chapter 5: Making It All Work Together
+### Chapter 5: Making It All Work Together
 Chapter 1 introduced the interconnection between human and AI processes. Each chapter since has shown a piece of it — context files feeding the AI's understanding, workplans bridging requests to action, skills embedding AI into daily work. This closing chapter brings those pieces together: how context files as reference information and skills as reference processes form a coherent system, and what it looks like when the loop is working end to end.
 
 Ideas covered:
 - Full synthesis of the human process and skill process interconnection
 - The complete structure in action: reference information (context files, standards) combined with reference processes (skills)
+
+# Goal
+1. The goal of this workplan is to take the chapter structure and information and create the relevant artefact in the code base.
+2. The chapter_x.md file should be created and have the information created in the current document added as reference.
+3. The SUMMARY.md must be updated with the relevant information
+
+# Workplan
+
+## Step 1: Create chapter files
+Create the following files under `src/`:
+
+| File | Content source |
+|------|---------------|
+| `src/introduction.md` | Update existing file with: Why this book exists, why you should read it, how to read this book, why you should contribute |
+| `src/chapter_1_ai_needs_structure.md` | Update existing file (rename from chapter_1.md) with Chapter 1 description and ideas covered |
+| `src/chapter_2_context_files.md` | Create with Chapter 2 description and ideas covered |
+| `src/chapter_3_use_cases_and_workplans.md` | Create with Chapter 3 description and ideas covered |
+| `src/chapter_4_skills.md` | Create with Chapter 4 description, ideas covered, concept diving, and technical details |
+| `src/chapter_5_making_it_all_work.md` | Create with Chapter 5 description and ideas covered |
+
+Each file should contain:
+- The chapter title as an H1
+- The chapter description as introductory text
+- The "Ideas covered" list as a reference section for future writing
+
+## Step 2: Update SUMMARY.md
+Replace the current `src/SUMMARY.md` content with:
+
+```markdown
+# Summary
+
+- [Introduction](./introduction.md)
+- [AI Needs Structure More Than You Think](./chapter_1_ai_needs_structure.md)
+- [Giving the AI Something to Work With — Context Files](./chapter_2_context_files.md)
+- [From Request to Action — Use Cases and Workplans](./chapter_3_use_cases_and_workplans.md)
+- [What Is a Skill (and Why It Matters)](./chapter_4_skills.md)
+- [Making It All Work Together](./chapter_5_making_it_all_work.md)
+```
+
+## Step 3: Validate
+- Confirm all files exist under `src/`
+- Confirm `SUMMARY.md` links match actual filenames
+- Confirm the book builds without errors (`mdbook build`)

@@ -1,5 +1,6 @@
 # Summary
 
+- [Cover](./cover.md)
 - [Introduction](./introduction.md)
 - [AI Needs Structure More Than You Think](./chapter_1_ai_needs_structure.md)
 - [Giving the AI Something to Work With — Context Files](./chapter_2_context_files.md)
